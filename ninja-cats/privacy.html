@@ -1,49 +1,48 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy Policy — Ninja Cats: Logic Puzzle</title><style>
-:root{--bg:#fbf8f3;--fg:#1f1b16;--muted:#6b6258;--card:#fff;--line:#e7dfd4;--accent:#c2410c}
-@media (prefers-color-scheme:dark){:root{--bg:#16130f;--fg:#f3ece3;--muted:#a89d90;--card:#211c17;--line:#3a322a;--accent:#fb923c}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:760px;margin:0 auto;padding:24px 16px 64px}a{color:var(--accent)}
-header{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:24px}
-header a.brand{font-weight:700;text-decoration:none;color:var(--fg)}nav a{margin-left:12px}
-h1{font-size:1.7rem;line-height:1.25}h2{font-size:1.15rem;margin-top:2rem}.muted{color:var(--muted)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;gap:16px;align-items:center}
-.card img{width:88px;height:88px;border-radius:20px}.banner{width:100%;border-radius:14px;margin:8px 0 16px}
-.lang{display:inline-block;margin:0 8px 16px 0}footer{margin-top:48px;color:var(--muted);font-size:.9rem}
+<title>Privacy Policy — Ninja Cats: Logic Puzzle</title><meta name="description" content="Privacy Policy — Ninja Cats: Logic Puzzle">
+<style>
+:root{--bg:#f7f5f1;--fg:#16140f;--muted:#6e675d;--soft:#efebe4;--line:#e2ddd3;--accent:#b4361f;--card:#fffdfa}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--fg:#efe9df;--muted:#9c958a;--soft:#1c1a17;--line:#2e2b26;--accent:#f0775e;--card:#181614}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:3px}
+a:hover{color:var(--accent)}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;letter-spacing:-.02em;text-decoration:none;font-size:1.05rem}.logo span{color:var(--accent)}
+.top nav{display:flex;gap:20px;font-size:.92rem;color:var(--muted)}.top nav a{text-decoration:none}
+.hero{padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 14px}
+.hero h1{font-size:clamp(2.3rem,7vw,3.6rem);line-height:1.04;letter-spacing:-.035em;margin:0 0 18px;font-weight:800}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0}
+section.block{padding:48px 0;border-bottom:1px solid var(--line)}
+.label{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin:0 0 20px}
+.game{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;transition:border-color .15s,transform .15s}
+.game:hover{border-color:var(--accent);color:inherit;transform:translateY(-1px)}
+.game h3{margin:0 0 2px;font-size:1.35rem;letter-spacing:-.02em}.game .vi{color:var(--muted);margin:0 0 12px}
+.game p{margin:0}.pill{display:inline-block;font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--muted);margin-top:16px}
+.arrow{float:right;color:var(--accent);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px}
+.grid h4{margin:0 0 6px;font-size:1rem}.grid p{margin:0;color:var(--muted);font-size:.95rem}
+.prose h1{font-size:clamp(1.9rem,5vw,2.6rem);letter-spacing:-.03em;line-height:1.1;margin:8px 0 6px}
+.prose h1+p{color:var(--muted);margin-top:0}
+.prose h2{font-size:1.12rem;letter-spacing:-.01em;margin:2.2em 0 .4em}
+.prose ul{padding-left:1.2em}.prose li{margin:.3em 0}
+.tabs{display:inline-flex;background:var(--soft);border-radius:999px;padding:4px;margin:40px 0 8px;gap:4px}
+.tabs a{text-decoration:none;font-size:.88rem;font-weight:600;padding:6px 14px;border-radius:999px;color:var(--muted)}
+.tabs a.on{background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.lang{display:none}.lang:target,.lang.default{display:block}.lang:target~.lang.default{display:none}
+.links{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.95rem;padding:10px 16px;border-radius:10px;border:1px solid var(--line);background:var(--card)}
+.btn:hover{border-color:var(--accent)}
+footer{padding:36px 0 56px;color:var(--muted);font-size:.88rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{text-decoration:none}
 </style></head>
-<body><main>
-<header><a class="brand" href="../">DKTStudio</a><nav><a href="../ninja-cats/">Ninja Cats</a><a href="mailto:dktviet0206@gmail.com">Contact</a></nav></header>
-<a class="lang" href="#en">English</a><a class="lang" href="#vi">Tiếng Việt</a><section id="en"><h1>Ninja Cats: Logic Puzzle — Privacy Policy</h1>
-<p>Effective 2026-10-22</p>
-<p>This policy explains what data the game <strong>Ninja Cats: Logic Puzzle</strong> (&quot;the game&quot;, &quot;we&quot;) uses, why, and the choices you have. The game is made by <strong>DKTStudio</strong>, an independent developer in Vietnam. Contact: <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong>.</p>
-<h2>Summary</h2>
-<ul><li>We do not ask for an account and we do not run our own servers.</li><li>Your progress stays on your phone.</li><li>The game shows ads from <strong>Google AdMob</strong>. Google and its advertising partners may collect device data to show and measure ads. Where the law requires it, the game asks for your consent first.</li><li>The game is not directed at children under 13.</li></ul>
-<h2>1. Data stored only on your device</h2>
-<p>Your progress, stars, scores, ninja ranks, daily streak, unlocked cats, hints and settings (language, sound, controls) are saved <strong>only on your device</strong>. We never receive them. Uninstalling the game, or clearing its data in your phone&#x27;s settings, deletes them permanently. We cannot restore them.</p>
-<h2>2. Data we do not collect</h2>
-<p>We do not collect your name, email address, phone number, contacts, photos, files, messages, precise location, health or payment information. The game asks for no special permissions; it only uses the internet connection to load ads.</p>
-<h2>3. Advertising (Google AdMob)</h2>
-<p>The game is free and paid for by ads (banners, interstitials after some wins, and optional rewarded ads). Ads are provided by <strong>Google AdMob</strong>, including ads from partner networks that bid through AdMob.</p>
-<p>To show ads, limit how often you see them, measure them and prevent fraud, Google and these partners may automatically collect:</p>
-<ul><li>your device&#x27;s <strong>advertising ID</strong> (Android Advertising ID or Apple IDFA, only if you allow tracking on iOS);</li><li><strong>IP address</strong> and the approximate location derived from it (country/city);</li><li>device and app information (model, operating system, language, app version);</li><li>ad interactions (which ads were shown or tapped) and diagnostic data (crashes, performance of the ad software).</li></ul>
-<p>This data is not linked to your name or identity by us. Google&#x27;s use of data is described at <strong><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></strong>, and Google&#x27;s privacy policy at <strong><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></strong>.</p>
-<h2>4. Your choices and consent</h2>
-<ul><li><strong>EEA, UK and Switzerland:</strong> before any personalised ads, the game shows Google&#x27;s consent form. You can accept, refuse, or choose per purpose and per partner. If you refuse, you may still see non-personalised ads.</li><li><strong>US states with privacy laws (e.g. California):</strong> you can opt out of the &quot;sale&quot; or &quot;sharing&quot; of your data for targeted ads.</li><li><strong>Change your choice at any time:</strong> in the game open <strong>Privacy → Privacy options (ads)</strong>.</li><li><strong>Advertising ID:</strong> you can reset or delete it in your phone settings (Android: <em>Settings → Google → Ads</em>; iPhone: <em>Settings → Privacy &amp; Security → Tracking</em>).</li><li><strong>iPhone / iPad:</strong> the game asks permission before tracking (App Tracking Transparency). If you choose &quot;Ask App Not to Track&quot;, your IDFA is not used.</li></ul>
-<h2>5. Legal basis (EEA/UK)</h2>
-<p>Personalised ads and the related use of your device data are based on your <strong>consent</strong>. Non-personalised ads, frequency capping, fraud prevention and ad measurement are based on <strong>legitimate interest</strong> in funding a free game, as set out in Google&#x27;s consent form.</p>
-<h2>6. Sharing and international transfers</h2>
-<p>We do not sell or share data ourselves, because we do not receive any. The data described in section 3 is collected directly by Google and its advertising partners, who may process it in countries other than yours (including the United States) under their own safeguards.</p>
-<h2>7. Retention and security</h2>
-<p>We keep no personal data. Google and its partners keep advertising data for the periods stated in their own policies. Data sent to the ad services is encrypted in transit (HTTPS).</p>
-<h2>8. Your rights</h2>
-<p>Depending on where you live (e.g. GDPR in Europe, CCPA in California, Decree 13/2023/NĐ-CP in Vietnam), you may have the right to access, correct, delete or object to the processing of your personal data, and to withdraw consent. Because we hold no personal data, the quickest way is to use the choices in section 4 and Google&#x27;s tools at <strong><a href="https://myadcenter.google.com">https://myadcenter.google.com</a></strong>. You may also email us and we will help you. You may complain to your local data protection authority.</p>
-<h2>9. Children</h2>
-<p>The game is not directed at children under 13, and we do not knowingly collect personal data from them. If you believe a child has used the game and data was collected, contact us and we will ask Google to handle it.</p>
-<h2>10. Changes to this policy</h2>
-<p>If this policy changes, we will update this page and the date at the top. The current version is also available inside the game.</p>
-<h2>11. Contact</h2>
-<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></section><hr><section id="vi" lang="vi"><h1>Mèo Ninja: Câu Đố Logic — Chính sách quyền riêng tư</h1>
+<body><div class="wrap">
+<header class="top"><a class="logo" href="../">DKT<span>Studio</span></a>
+<nav><a href="../#games">Games</a><a href="mailto:dktviet0206@gmail.com">Contact</a></nav></header>
+<section id="vi" class="lang prose"><div class="tabs"><a href="#en">English</a><a href="#vi" class="on">Tiếng Việt</a></div><h1>Mèo Ninja: Câu Đố Logic — Chính sách quyền riêng tư</h1>
 <p>Hiệu lực từ 22/10/2026</p>
 <p>Chính sách này giải thích trò chơi <strong>Mèo Ninja: Câu Đố Logic</strong> (tên tiếng Anh <em>Ninja Cats: Logic Puzzle</em>, &quot;trò chơi&quot;, &quot;chúng tôi&quot;) dùng dữ liệu gì, để làm gì, và bạn có những lựa chọn nào. Trò chơi do <strong>DKTStudio</strong>, nhà phát triển độc lập tại Việt Nam, làm ra. Liên hệ: <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong>.</p>
 <h2>Tóm tắt</h2>
@@ -72,6 +71,35 @@ h1{font-size:1.7rem;line-height:1.25}h2{font-size:1.15rem;margin-top:2rem}.muted
 <h2>10. Thay đổi chính sách</h2>
 <p>Khi chính sách thay đổi, chúng tôi cập nhật trang này và ngày ở đầu trang. Bản hiện hành cũng có trong trò chơi.</p>
 <h2>11. Liên hệ</h2>
-<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></section>
-<footer>© 2026 DKTStudio · <a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></footer>
-</main></body></html>
+<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></section><section id="en" class="lang prose default"><div class="tabs"><a href="#en" class="on">English</a><a href="#vi">Tiếng Việt</a></div><h1>Ninja Cats: Logic Puzzle — Privacy Policy</h1>
+<p>Effective 2026-10-22</p>
+<p>This policy explains what data the game <strong>Ninja Cats: Logic Puzzle</strong> (&quot;the game&quot;, &quot;we&quot;) uses, why, and the choices you have. The game is made by <strong>DKTStudio</strong>, an independent developer in Vietnam. Contact: <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong>.</p>
+<h2>Summary</h2>
+<ul><li>We do not ask for an account and we do not run our own servers.</li><li>Your progress stays on your phone.</li><li>The game shows ads from <strong>Google AdMob</strong>. Google and its advertising partners may collect device data to show and measure ads. Where the law requires it, the game asks for your consent first.</li><li>The game is not directed at children under 13.</li></ul>
+<h2>1. Data stored only on your device</h2>
+<p>Your progress, stars, scores, ninja ranks, daily streak, unlocked cats, hints and settings (language, sound, controls) are saved <strong>only on your device</strong>. We never receive them. Uninstalling the game, or clearing its data in your phone&#x27;s settings, deletes them permanently. We cannot restore them.</p>
+<h2>2. Data we do not collect</h2>
+<p>We do not collect your name, email address, phone number, contacts, photos, files, messages, precise location, health or payment information. The game asks for no special permissions; it only uses the internet connection to load ads.</p>
+<h2>3. Advertising (Google AdMob)</h2>
+<p>The game is free and paid for by ads (banners, interstitials after some wins, and optional rewarded ads). Ads are provided by <strong>Google AdMob</strong>, including ads from partner networks that bid through AdMob.</p>
+<p>To show ads, limit how often you see them, measure them and prevent fraud, Google and these partners may automatically collect:</p>
+<ul><li>your device&#x27;s <strong>advertising ID</strong> (Android Advertising ID or Apple IDFA, only if you allow tracking on iOS);</li><li><strong>IP address</strong> and the approximate location derived from it (country/city);</li><li>device and app information (model, operating system, language, app version);</li><li>ad interactions (which ads were shown or tapped) and diagnostic data (crashes, performance of the ad software).</li></ul>
+<p>This data is not linked to your name or identity by us. Google&#x27;s use of data is described at <strong><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></strong>, and Google&#x27;s privacy policy at <strong><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></strong>.</p>
+<h2>4. Your choices and consent</h2>
+<ul><li><strong>EEA, UK and Switzerland:</strong> before any personalised ads, the game shows Google&#x27;s consent form. You can accept, refuse, or choose per purpose and per partner. If you refuse, you may still see non-personalised ads.</li><li><strong>US states with privacy laws (e.g. California):</strong> you can opt out of the &quot;sale&quot; or &quot;sharing&quot; of your data for targeted ads.</li><li><strong>Change your choice at any time:</strong> in the game open <strong>Privacy → Privacy options (ads)</strong>.</li><li><strong>Advertising ID:</strong> you can reset or delete it in your phone settings (Android: <em>Settings → Google → Ads</em>; iPhone: <em>Settings → Privacy &amp; Security → Tracking</em>).</li><li><strong>iPhone / iPad:</strong> the game asks permission before tracking (App Tracking Transparency). If you choose &quot;Ask App Not to Track&quot;, your IDFA is not used.</li></ul>
+<h2>5. Legal basis (EEA/UK)</h2>
+<p>Personalised ads and the related use of your device data are based on your <strong>consent</strong>. Non-personalised ads, frequency capping, fraud prevention and ad measurement are based on <strong>legitimate interest</strong> in funding a free game, as set out in Google&#x27;s consent form.</p>
+<h2>6. Sharing and international transfers</h2>
+<p>We do not sell or share data ourselves, because we do not receive any. The data described in section 3 is collected directly by Google and its advertising partners, who may process it in countries other than yours (including the United States) under their own safeguards.</p>
+<h2>7. Retention and security</h2>
+<p>We keep no personal data. Google and its partners keep advertising data for the periods stated in their own policies. Data sent to the ad services is encrypted in transit (HTTPS).</p>
+<h2>8. Your rights</h2>
+<p>Depending on where you live (e.g. GDPR in Europe, CCPA in California, Decree 13/2023/NĐ-CP in Vietnam), you may have the right to access, correct, delete or object to the processing of your personal data, and to withdraw consent. Because we hold no personal data, the quickest way is to use the choices in section 4 and Google&#x27;s tools at <strong><a href="https://myadcenter.google.com">https://myadcenter.google.com</a></strong>. You may also email us and we will help you. You may complain to your local data protection authority.</p>
+<h2>9. Children</h2>
+<p>The game is not directed at children under 13, and we do not knowingly collect personal data from them. If you believe a child has used the game and data was collected, contact us and we will ask Google to handle it.</p>
+<h2>10. Changes to this policy</h2>
+<p>If this policy changes, we will update this page and the date at the top. The current version is also available inside the game.</p>
+<h2>11. Contact</h2>
+<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></section><div style="height:24px"></div>
+<footer><span>© 2026 DKTStudio · Vietnam</span><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></footer>
+</div></body></html>
