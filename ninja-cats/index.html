@@ -1,8 +1,12 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ninja Cats: Logic Puzzle — DKTStudio</title><meta name="description" content="Ninja Cats: Logic Puzzle — a no-guess logic puzzle game by DKTStudio.">
 <meta property="og:title" content="Ninja Cats: Logic Puzzle — DKTStudio"><meta property="og:description" content="Ninja Cats: Logic Puzzle — a no-guess logic puzzle game by DKTStudio.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e5484d'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EDK%3C/text%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e5484d'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EDK%3C/text%3E%3C/svg%3E"><script>(function(){var q=new URLSearchParams(location.search).get('lang'),s=null;
+try{s=localStorage.getItem('lang')}catch(e){}
+var l=q||s||((navigator.language||'').toLowerCase().indexOf('vi')===0?'vi':'en');if(l!=='vi')l='en';
+document.documentElement.dataset.lang=l;document.documentElement.lang=l;
+window.setLang=function(v){document.documentElement.dataset.lang=v;document.documentElement.lang=v;try{localStorage.setItem('lang',v)}catch(e){}};})();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
 :root{--bg:#fbfaf8;--fg:#14130f;--muted:#6b665e;--soft:#f1efeb;--line:#e6e2db;--card:#fff;--accent:#e5484d;--accent-ink:#fff;
 --hero:#0e0d14;--hero-fg:#f5f2ec;--hero-muted:#a8a3b8;--hero-line:rgba(255,255,255,.09)}
 @media (prefers-color-scheme:dark){:root{--bg:#0f0e12;--fg:#efece6;--muted:#9a95a3;--soft:#18171c;--line:#26242b;--card:#141318;--accent:#ff6369}}
@@ -97,37 +101,39 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92rem}
 .prose h1+p{color:var(--muted);margin-top:0}
 .prose h2{font-size:1.18rem;letter-spacing:-.015em;margin:2.2em 0 .5em}
 .prose ul{padding-left:1.2em}.prose li{margin:.35em 0}.prose a{color:var(--accent)}
-.tabs{display:inline-flex;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px;margin:32px 0 4px;gap:4px}
-.tabs a{text-decoration:none;font-size:.88rem;font-weight:600;padding:7px 16px;border-radius:999px;color:var(--muted)}
-.tabs a.on{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.1)}
-.lang{display:none}.lang:target,.lang.default{display:block}.lang:target~.lang.default{display:none}
+/* language: html[data-lang] picks which copy shows; set before paint by the head script */
+html[data-lang="en"] [data-l="vi"],html[data-lang="vi"] [data-l="en"]{display:none!important}
+.lsw{display:inline-flex;border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 25%,transparent);border-radius:999px;padding:3px;gap:2px}
+.lsw button{all:unset;cursor:pointer;font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:999px;opacity:.6}
+html[data-lang="en"] .lsw [data-set="en"],html[data-lang="vi"] .lsw [data-set="vi"]{background:var(--accent);color:#fff;opacity:1}
 </style></head>
 <body>
 <header class="nav"><div class="wrap">
 <a class="brand" href="../"><span class="mark">DK</span>DKTStudio</a>
-<nav class="links"><a href="../#games">Games</a><a href="../#approach">Approach</a><a href="../#about">Studio</a><a class="cta" href="mailto:dktviet0206@gmail.com">Contact</a></nav>
+<nav class="links"><a href="../#games"><span data-l="en">Games</span><span data-l="vi">Trò chơi</span></a><a href="../#approach"><span data-l="en">Approach</span><span data-l="vi">Cách làm</span></a><a href="../#about"><span data-l="en">Studio</span><span data-l="vi">Studio</span></a>
+<span class="lsw" role="group" aria-label="Language"><button data-set="en" onclick="setLang('en')">EN</button><button data-set="vi" onclick="setLang('vi')">VI</button></span><a class="cta" href="mailto:dktviet0206@gmail.com"><span data-l="en">Contact</span><span data-l="vi">Liên hệ</span></a></nav>
 </div></header>
-<section class="pagehead"><div class="wrap"><div class="row"><img src="icon.png" alt="Ninja Cats logo" width="120" height="120"><div><p class="kicker" style="margin:0 0 8px">Logic puzzle · Android · coming soon</p><h1>Ninja Cats: Logic Puzzle</h1><p>Mèo Ninja: Câu Đố Logic · by DKTStudio</p></div></div></div></section><div class="wrap"><section id="vi" class="lang prose"><div class="tabs"><a href="#en">English</a><a href="#vi" class="on">Tiếng Việt</a></div><p>Giấu những chú mèo ninja — chỉ bằng suy luận.</p>
-<p>Mỗi màn là một lưới chia vùng màu. Đặt đúng một mèo trên mỗi hàng, mỗi cột và mỗi vùng màu. Mèo rất nhút nhát: không bao giờ đứng cạnh nhau, kể cả đường chéo. Mỗi màn chỉ có một lời giải và giải được hoàn toàn bằng suy luận — không bao giờ phải đoán.</p>
-<p>Rồi võ đường trở nên khó hơn:</p>
-<ul><li>Chó canh cầm đèn lồng soi theo tầm nhìn — mèo không được nấp trong vùng sáng.</li><li>Dấu chân cho biết có bao nhiêu mèo quanh nó.</li><li>Phân thân: hai vùng nối nhau, hai mèo phải cách nhau đúng một nước mã.</li></ul>
-<h2>Tính năng</h2>
-<ul><li>525 màn đã kiểm tra, từ 5×5 khởi động đến 10×10 cấp Shogun</li><li>Võ Đường Mỗi Ngày: mỗi ngày một câu đố mới, giữ chuỗi ngày</li><li>Lên cấp ninja, chơi cùng 4 mèo ninja</li><li>Chạm để đánh ✕, chạm 2 lần để đặt mèo; tự ✕ và gợi ý bom khói</li><li>Chơi offline, dung lượng nhỏ, tiếng Việt và tiếng Anh</li><li>Tuỳ chọn hoa văn cho người mù màu</li></ul>
-<p>Nếu bạn thích câu đố logic kiểu queens, star battle, nonogram hay sudoku, hãy cho não tập võ ninja.</p></section><section id="en" class="lang prose default"><div class="tabs"><a href="#en" class="on">English</a><a href="#vi">Tiếng Việt</a></div><p>Hide the ninja cats — using pure logic.</p>
+<section class="pagehead"><div class="wrap"><div class="row"><img src="icon.png" alt="Ninja Cats logo" width="120" height="120"><div><p class="kicker" style="margin:0 0 8px"><span data-l="en">Logic puzzle · Android · coming soon</span><span data-l="vi">Câu đố logic · Android · sắp ra mắt</span></p><h1><span data-l="en">Ninja Cats: Logic Puzzle</span><span data-l="vi">Mèo Ninja: Câu Đố Logic</span></h1><p><span data-l="en">by DKTStudio</span><span data-l="vi">của DKTStudio</span></p></div></div></div></section><div class="wrap"><div class="prose"><div data-l="en"><p>Hide the ninja cats — using pure logic.</p>
 <p>Every board is a grid of coloured regions. Place exactly one cat in each row, each column and each colour region. Cats are shy: they never touch, not even diagonally. Every puzzle has one solution and can be solved by reasoning alone — no guessing, ever.</p>
 <p>Then the dojo gets tricky:</p>
 <ul><li>Dog guards with lanterns light up their line of sight — cats can&#x27;t hide in the light.</li><li>Pawprint clues tell you how many cats are next to them.</li><li>Shadow twins: two linked regions whose cats must be a knight&#x27;s move apart.</li></ul>
 <h2>Features</h2>
 <ul><li>525 verified levels, from 5×5 warm-ups to 10×10 Shogun boards</li><li>Daily Dojo: a fresh puzzle every day, keep your streak</li><li>Earn ninja ranks and play as 4 ninja cats</li><li>Tap for ✕, double-tap for a cat; auto-✕ and smoke-bomb hints</li><li>Works offline, small download, English and Vietnamese</li><li>Colour-blind patterns option</li></ul>
-<p>If you like queens-style logic puzzles, star battle, nonograms or sudoku, give your brain a ninja workout.</p></section><div style="padding-bottom:88px"><div class="btns"><a class="btn primary" href="mailto:dktviet0206@gmail.com">Support: dktviet0206@gmail.com</a><a class="btn" href="privacy.html">Privacy Policy</a><a class="btn" href="terms.html">Terms of Use</a></div></div></div>
+<p>If you like queens-style logic puzzles, star battle, nonograms or sudoku, give your brain a ninja workout.</p></div><div data-l="vi"><p>Giấu những chú mèo ninja — chỉ bằng suy luận.</p>
+<p>Mỗi màn là một lưới chia vùng màu. Đặt đúng một mèo trên mỗi hàng, mỗi cột và mỗi vùng màu. Mèo rất nhút nhát: không bao giờ đứng cạnh nhau, kể cả đường chéo. Mỗi màn chỉ có một lời giải và giải được hoàn toàn bằng suy luận — không bao giờ phải đoán.</p>
+<p>Rồi võ đường trở nên khó hơn:</p>
+<ul><li>Chó canh cầm đèn lồng soi theo tầm nhìn — mèo không được nấp trong vùng sáng.</li><li>Dấu chân cho biết có bao nhiêu mèo quanh nó.</li><li>Phân thân: hai vùng nối nhau, hai mèo phải cách nhau đúng một nước mã.</li></ul>
+<h2>Tính năng</h2>
+<ul><li>525 màn đã kiểm tra, từ 5×5 khởi động đến 10×10 cấp Shogun</li><li>Võ Đường Mỗi Ngày: mỗi ngày một câu đố mới, giữ chuỗi ngày</li><li>Lên cấp ninja, chơi cùng 4 mèo ninja</li><li>Chạm để đánh ✕, chạm 2 lần để đặt mèo; tự ✕ và gợi ý bom khói</li><li>Chơi offline, dung lượng nhỏ, tiếng Việt và tiếng Anh</li><li>Tuỳ chọn hoa văn cho người mù màu</li></ul>
+<p>Nếu bạn thích câu đố logic kiểu queens, star battle, nonogram hay sudoku, hãy cho não tập võ ninja.</p></div></div><div style="padding-bottom:88px"><div class="btns"><a class="btn primary" href="mailto:dktviet0206@gmail.com"><span data-l="en">Support:</span><span data-l="vi">Hỗ trợ:</span> dktviet0206@gmail.com</a><a class="btn" href="privacy.html"><span data-l="en">Privacy Policy</span><span data-l="vi">Chính sách quyền riêng tư</span></a><a class="btn" href="terms.html"><span data-l="en">Terms of Use</span><span data-l="vi">Điều khoản sử dụng</span></a></div></div></div>
 <footer><div class="wrap">
 <div class="fgrid">
 <div><a class="brand" href="../" style="color:var(--fg)"><span class="mark">DK</span>DKTStudio</a>
-<p>Independent game studio from Vietnam, making fair, offline-friendly puzzle games.</p></div>
-<div><h5>Studio</h5><a href="../#games">Games</a><a href="../#approach">Approach</a><a href="../#about">About</a></div>
-<div><h5>Ninja Cats</h5><a href="../ninja-cats/">Game page</a><a href="../ninja-cats/privacy.html">Privacy Policy</a><a href="../ninja-cats/terms.html">Terms of Use</a></div>
-<div><h5>Contact</h5><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></div>
+<p><span data-l="en">Independent game studio from Vietnam, making fair, offline-friendly puzzle games.</span><span data-l="vi">Studio game độc lập tại Việt Nam, làm game giải đố công bằng, chơi được offline.</span></p></div>
+<div><h5>Studio</h5><a href="../#games"><span data-l="en">Games</span><span data-l="vi">Trò chơi</span></a><a href="../#approach"><span data-l="en">Approach</span><span data-l="vi">Cách làm</span></a><a href="../#about"><span data-l="en">About</span><span data-l="vi">Giới thiệu</span></a></div>
+<div><h5>Ninja Cats</h5><a href="../ninja-cats/"><span data-l="en">Game page</span><span data-l="vi">Trang game</span></a><a href="../ninja-cats/privacy.html"><span data-l="en">Privacy Policy</span><span data-l="vi">Quyền riêng tư</span></a><a href="../ninja-cats/terms.html"><span data-l="en">Terms of Use</span><span data-l="vi">Điều khoản sử dụng</span></a></div>
+<div><h5><span data-l="en">Contact</span><span data-l="vi">Liên hệ</span></h5><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></div>
 </div>
-<div class="legalline"><span>© 2026 DKTStudio. All rights reserved.</span><span>Made in Vietnam 🇻🇳</span></div>
+<div class="legalline"><span>© 2026 DKTStudio. <span data-l="en">All rights reserved.</span><span data-l="vi">Bảo lưu mọi quyền.</span></span></div>
 </div></footer>
 </body></html>

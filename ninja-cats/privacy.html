@@ -1,8 +1,12 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en" data-lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Privacy Policy — Ninja Cats: Logic Puzzle</title><meta name="description" content="Privacy Policy for Ninja Cats: Logic Puzzle by DKTStudio.">
 <meta property="og:title" content="Privacy Policy — Ninja Cats: Logic Puzzle"><meta property="og:description" content="Privacy Policy for Ninja Cats: Logic Puzzle by DKTStudio.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e5484d'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EDK%3C/text%3E%3C/svg%3E"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e5484d'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3EDK%3C/text%3E%3C/svg%3E"><script>(function(){var q=new URLSearchParams(location.search).get('lang'),s=null;
+try{s=localStorage.getItem('lang')}catch(e){}
+var l=q||s||((navigator.language||'').toLowerCase().indexOf('vi')===0?'vi':'en');if(l!=='vi')l='en';
+document.documentElement.dataset.lang=l;document.documentElement.lang=l;
+window.setLang=function(v){document.documentElement.dataset.lang=v;document.documentElement.lang=v;try{localStorage.setItem('lang',v)}catch(e){}};})();</script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
 :root{--bg:#fbfaf8;--fg:#14130f;--muted:#6b665e;--soft:#f1efeb;--line:#e6e2db;--card:#fff;--accent:#e5484d;--accent-ink:#fff;
 --hero:#0e0d14;--hero-fg:#f5f2ec;--hero-muted:#a8a3b8;--hero-line:rgba(255,255,255,.09)}
 @media (prefers-color-scheme:dark){:root{--bg:#0f0e12;--fg:#efece6;--muted:#9a95a3;--soft:#18171c;--line:#26242b;--card:#141318;--accent:#ff6369}}
@@ -97,46 +101,19 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92rem}
 .prose h1+p{color:var(--muted);margin-top:0}
 .prose h2{font-size:1.18rem;letter-spacing:-.015em;margin:2.2em 0 .5em}
 .prose ul{padding-left:1.2em}.prose li{margin:.35em 0}.prose a{color:var(--accent)}
-.tabs{display:inline-flex;background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:4px;margin:32px 0 4px;gap:4px}
-.tabs a{text-decoration:none;font-size:.88rem;font-weight:600;padding:7px 16px;border-radius:999px;color:var(--muted)}
-.tabs a.on{background:var(--card);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.1)}
-.lang{display:none}.lang:target,.lang.default{display:block}.lang:target~.lang.default{display:none}
+/* language: html[data-lang] picks which copy shows; set before paint by the head script */
+html[data-lang="en"] [data-l="vi"],html[data-lang="vi"] [data-l="en"]{display:none!important}
+.lsw{display:inline-flex;border:1px solid currentColor;border-color:color-mix(in srgb,currentColor 25%,transparent);border-radius:999px;padding:3px;gap:2px}
+.lsw button{all:unset;cursor:pointer;font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:999px;opacity:.6}
+html[data-lang="en"] .lsw [data-set="en"],html[data-lang="vi"] .lsw [data-set="vi"]{background:var(--accent);color:#fff;opacity:1}
 </style></head>
 <body>
 <header class="nav"><div class="wrap">
 <a class="brand" href="../"><span class="mark">DK</span>DKTStudio</a>
-<nav class="links"><a href="../#games">Games</a><a href="../#approach">Approach</a><a href="../#about">Studio</a><a class="cta" href="mailto:dktviet0206@gmail.com">Contact</a></nav>
+<nav class="links"><a href="../#games"><span data-l="en">Games</span><span data-l="vi">Trò chơi</span></a><a href="../#approach"><span data-l="en">Approach</span><span data-l="vi">Cách làm</span></a><a href="../#about"><span data-l="en">Studio</span><span data-l="vi">Studio</span></a>
+<span class="lsw" role="group" aria-label="Language"><button data-set="en" onclick="setLang('en')">EN</button><button data-set="vi" onclick="setLang('vi')">VI</button></span><a class="cta" href="mailto:dktviet0206@gmail.com"><span data-l="en">Contact</span><span data-l="vi">Liên hệ</span></a></nav>
 </div></header>
-<section class="pagehead"><div class="wrap"><div class="row"><img src="icon.png" alt="Ninja Cats logo" width="120" height="120"><div><p class="kicker" style="margin:0 0 8px">Privacy Policy</p><h1>Ninja Cats: Logic Puzzle</h1><p>Mèo Ninja: Câu Đố Logic · by DKTStudio</p></div></div></div></section><div class="wrap"><section id="vi" class="lang prose"><div class="tabs"><a href="#en">English</a><a href="#vi" class="on">Tiếng Việt</a></div><h1>Mèo Ninja: Câu Đố Logic — Chính sách quyền riêng tư</h1>
-<p>Hiệu lực từ 22/10/2026</p>
-<p>Chính sách này giải thích trò chơi <strong>Mèo Ninja: Câu Đố Logic</strong> (tên tiếng Anh <em>Ninja Cats: Logic Puzzle</em>, &quot;trò chơi&quot;, &quot;chúng tôi&quot;) dùng dữ liệu gì, để làm gì, và bạn có những lựa chọn nào. Trò chơi do <strong>DKTStudio</strong>, nhà phát triển độc lập tại Việt Nam, làm ra. Liên hệ: <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong>.</p>
-<h2>Tóm tắt</h2>
-<ul><li>Không cần tài khoản, chúng tôi không có máy chủ riêng.</li><li>Tiến độ chơi chỉ nằm trên điện thoại của bạn.</li><li>Trò chơi hiển thị quảng cáo của <strong>Google AdMob</strong>. Google và các đối tác quảng cáo có thể thu thập dữ liệu thiết bị để hiển thị và đo lường quảng cáo. Nơi nào luật yêu cầu, trò chơi sẽ hỏi bạn đồng ý trước.</li><li>Trò chơi không dành cho trẻ em dưới 13 tuổi.</li></ul>
-<h2>1. Dữ liệu chỉ lưu trên máy của bạn</h2>
-<p>Tiến độ, sao, điểm, cấp bậc ninja, chuỗi ngày, mèo đã mở, gợi ý và cài đặt (ngôn ngữ, âm thanh, thao tác) <strong>chỉ lưu trên máy của bạn</strong>. Chúng tôi không bao giờ nhận được. Gỡ trò chơi hoặc xoá dữ liệu ứng dụng trong cài đặt điện thoại sẽ xoá vĩnh viễn; chúng tôi không khôi phục được.</p>
-<h2>2. Dữ liệu chúng tôi không thu thập</h2>
-<p>Chúng tôi không thu thập tên, email, số điện thoại, danh bạ, ảnh, tệp, tin nhắn, vị trí chính xác, thông tin sức khoẻ hay thanh toán. Trò chơi không xin quyền đặc biệt nào; chỉ dùng kết nối internet để tải quảng cáo.</p>
-<h2>3. Quảng cáo (Google AdMob)</h2>
-<p>Trò chơi miễn phí nhờ quảng cáo (biểu ngữ, quảng cáo xen kẽ sau một số màn thắng, và quảng cáo có thưởng do bạn tự chọn xem). Quảng cáo do <strong>Google AdMob</strong> cung cấp, kể cả quảng cáo từ các đối tác đấu giá qua AdMob.</p>
-<p>Để hiển thị quảng cáo, giới hạn số lần bạn thấy, đo lường và chống gian lận, Google và các đối tác có thể tự động thu thập:</p>
-<ul><li><strong>mã quảng cáo</strong> của thiết bị (Android Advertising ID, hoặc IDFA của Apple nếu bạn cho phép theo dõi trên iOS);</li><li><strong>địa chỉ IP</strong> và vị trí gần đúng suy ra từ đó (quốc gia/thành phố);</li><li>thông tin thiết bị và ứng dụng (dòng máy, hệ điều hành, ngôn ngữ, phiên bản trò chơi);</li><li>tương tác với quảng cáo (quảng cáo nào đã hiện hoặc được chạm) và dữ liệu chẩn đoán (lỗi, hiệu năng của phần mềm quảng cáo).</li></ul>
-<p>Chúng tôi không gắn các dữ liệu này với tên hay danh tính của bạn. Cách Google dùng dữ liệu: <strong><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></strong>; chính sách quyền riêng tư của Google: <strong><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></strong>.</p>
-<h2>4. Lựa chọn và sự đồng ý của bạn</h2>
-<ul><li><strong>Khu vực EEA, Anh, Thuỵ Sĩ:</strong> trước khi có quảng cáo cá nhân hoá, trò chơi hiện biểu mẫu xin đồng ý của Google. Bạn có thể đồng ý, từ chối, hoặc chọn theo từng mục đích, từng đối tác. Nếu từ chối, bạn vẫn có thể thấy quảng cáo không cá nhân hoá.</li><li><strong>Các bang Hoa Kỳ có luật quyền riêng tư (vd. California):</strong> bạn có thể từ chối việc &quot;bán&quot; hoặc &quot;chia sẻ&quot; dữ liệu cho quảng cáo nhắm mục tiêu.</li><li><strong>Đổi lựa chọn bất cứ lúc nào:</strong> trong trò chơi mở <strong>Quyền riêng tư → Tuỳ chọn quyền riêng tư (quảng cáo)</strong>.</li><li><strong>Mã quảng cáo:</strong> bạn có thể đặt lại hoặc xoá trong cài đặt điện thoại (Android: <em>Cài đặt → Google → Quảng cáo</em>; iPhone: <em>Cài đặt → Quyền riêng tư &amp; Bảo mật → Theo dõi</em>).</li><li><strong>iPhone / iPad:</strong> trò chơi hỏi phép trước khi theo dõi (App Tracking Transparency). Nếu bạn chọn &quot;Yêu cầu ứng dụng không theo dõi&quot;, IDFA sẽ không được dùng.</li></ul>
-<h2>5. Cơ sở pháp lý (EEA/Anh)</h2>
-<p>Quảng cáo cá nhân hoá và việc dùng dữ liệu thiết bị liên quan dựa trên <strong>sự đồng ý</strong> của bạn. Quảng cáo không cá nhân hoá, giới hạn tần suất, chống gian lận và đo lường quảng cáo dựa trên <strong>lợi ích hợp pháp</strong> là duy trì một trò chơi miễn phí, như nêu trong biểu mẫu xin đồng ý của Google.</p>
-<h2>6. Chia sẻ và chuyển dữ liệu ra nước ngoài</h2>
-<p>Chúng tôi không tự bán hay chia sẻ dữ liệu, vì chúng tôi không nhận dữ liệu nào. Dữ liệu ở mục 3 do Google và các đối tác quảng cáo thu thập trực tiếp, có thể được xử lý ở nước khác (kể cả Hoa Kỳ) theo biện pháp bảo vệ của họ.</p>
-<h2>7. Thời gian lưu và bảo mật</h2>
-<p>Chúng tôi không lưu dữ liệu cá nhân. Google và đối tác lưu dữ liệu quảng cáo theo thời hạn trong chính sách của họ. Dữ liệu gửi tới dịch vụ quảng cáo được mã hoá khi truyền (HTTPS).</p>
-<h2>8. Quyền của bạn</h2>
-<p>Tuỳ nơi bạn sống (vd. GDPR ở châu Âu, CCPA ở California, Nghị định 13/2023/NĐ-CP ở Việt Nam), bạn có thể có quyền truy cập, chỉnh sửa, xoá, phản đối việc xử lý dữ liệu cá nhân và rút lại sự đồng ý. Vì chúng tôi không giữ dữ liệu cá nhân, cách nhanh nhất là dùng các lựa chọn ở mục 4 và công cụ của Google tại <strong><a href="https://myadcenter.google.com">https://myadcenter.google.com</a></strong>. Bạn cũng có thể gửi email, chúng tôi sẽ hỗ trợ. Bạn có quyền khiếu nại tới cơ quan bảo vệ dữ liệu nơi bạn sống.</p>
-<h2>9. Trẻ em</h2>
-<p>Trò chơi không dành cho trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ. Nếu bạn cho rằng một em nhỏ đã chơi và bị thu thập dữ liệu, hãy liên hệ để chúng tôi đề nghị Google xử lý.</p>
-<h2>10. Thay đổi chính sách</h2>
-<p>Khi chính sách thay đổi, chúng tôi cập nhật trang này và ngày ở đầu trang. Bản hiện hành cũng có trong trò chơi.</p>
-<h2>11. Liên hệ</h2>
-<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></section><section id="en" class="lang prose default"><div class="tabs"><a href="#en" class="on">English</a><a href="#vi">Tiếng Việt</a></div><h1>Ninja Cats: Logic Puzzle — Privacy Policy</h1>
+<section class="pagehead"><div class="wrap"><div class="row"><img src="icon.png" alt="Ninja Cats logo" width="120" height="120"><div><p class="kicker" style="margin:0 0 8px"><span data-l="en">Privacy Policy</span><span data-l="vi">Chính sách quyền riêng tư</span></p><h1><span data-l="en">Ninja Cats: Logic Puzzle</span><span data-l="vi">Mèo Ninja: Câu Đố Logic</span></h1><p><span data-l="en">by DKTStudio</span><span data-l="vi">của DKTStudio</span></p></div></div></div></section><div class="wrap"><div class="prose"><div data-l="en"><h1>Ninja Cats: Logic Puzzle — Privacy Policy</h1>
 <p>Effective 2026-10-22</p>
 <p>This policy explains what data the game <strong>Ninja Cats: Logic Puzzle</strong> (&quot;the game&quot;, &quot;we&quot;) uses, why, and the choices you have. The game is made by <strong>DKTStudio</strong>, an independent developer in Vietnam. Contact: <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong>.</p>
 <h2>Summary</h2>
@@ -165,15 +142,44 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px;font-size:.92rem}
 <h2>10. Changes to this policy</h2>
 <p>If this policy changes, we will update this page and the date at the top. The current version is also available inside the game.</p>
 <h2>11. Contact</h2>
-<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></section></div>
+<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></div><div data-l="vi"><h1>Mèo Ninja: Câu Đố Logic — Chính sách quyền riêng tư</h1>
+<p>Hiệu lực từ 22/10/2026</p>
+<p>Chính sách này giải thích trò chơi <strong>Mèo Ninja: Câu Đố Logic</strong> (tên tiếng Anh <em>Ninja Cats: Logic Puzzle</em>, &quot;trò chơi&quot;, &quot;chúng tôi&quot;) dùng dữ liệu gì, để làm gì, và bạn có những lựa chọn nào. Trò chơi do <strong>DKTStudio</strong>, nhà phát triển độc lập tại Việt Nam, làm ra. Liên hệ: <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong>.</p>
+<h2>Tóm tắt</h2>
+<ul><li>Không cần tài khoản, chúng tôi không có máy chủ riêng.</li><li>Tiến độ chơi chỉ nằm trên điện thoại của bạn.</li><li>Trò chơi hiển thị quảng cáo của <strong>Google AdMob</strong>. Google và các đối tác quảng cáo có thể thu thập dữ liệu thiết bị để hiển thị và đo lường quảng cáo. Nơi nào luật yêu cầu, trò chơi sẽ hỏi bạn đồng ý trước.</li><li>Trò chơi không dành cho trẻ em dưới 13 tuổi.</li></ul>
+<h2>1. Dữ liệu chỉ lưu trên máy của bạn</h2>
+<p>Tiến độ, sao, điểm, cấp bậc ninja, chuỗi ngày, mèo đã mở, gợi ý và cài đặt (ngôn ngữ, âm thanh, thao tác) <strong>chỉ lưu trên máy của bạn</strong>. Chúng tôi không bao giờ nhận được. Gỡ trò chơi hoặc xoá dữ liệu ứng dụng trong cài đặt điện thoại sẽ xoá vĩnh viễn; chúng tôi không khôi phục được.</p>
+<h2>2. Dữ liệu chúng tôi không thu thập</h2>
+<p>Chúng tôi không thu thập tên, email, số điện thoại, danh bạ, ảnh, tệp, tin nhắn, vị trí chính xác, thông tin sức khoẻ hay thanh toán. Trò chơi không xin quyền đặc biệt nào; chỉ dùng kết nối internet để tải quảng cáo.</p>
+<h2>3. Quảng cáo (Google AdMob)</h2>
+<p>Trò chơi miễn phí nhờ quảng cáo (biểu ngữ, quảng cáo xen kẽ sau một số màn thắng, và quảng cáo có thưởng do bạn tự chọn xem). Quảng cáo do <strong>Google AdMob</strong> cung cấp, kể cả quảng cáo từ các đối tác đấu giá qua AdMob.</p>
+<p>Để hiển thị quảng cáo, giới hạn số lần bạn thấy, đo lường và chống gian lận, Google và các đối tác có thể tự động thu thập:</p>
+<ul><li><strong>mã quảng cáo</strong> của thiết bị (Android Advertising ID, hoặc IDFA của Apple nếu bạn cho phép theo dõi trên iOS);</li><li><strong>địa chỉ IP</strong> và vị trí gần đúng suy ra từ đó (quốc gia/thành phố);</li><li>thông tin thiết bị và ứng dụng (dòng máy, hệ điều hành, ngôn ngữ, phiên bản trò chơi);</li><li>tương tác với quảng cáo (quảng cáo nào đã hiện hoặc được chạm) và dữ liệu chẩn đoán (lỗi, hiệu năng của phần mềm quảng cáo).</li></ul>
+<p>Chúng tôi không gắn các dữ liệu này với tên hay danh tính của bạn. Cách Google dùng dữ liệu: <strong><a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></strong>; chính sách quyền riêng tư của Google: <strong><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></strong>.</p>
+<h2>4. Lựa chọn và sự đồng ý của bạn</h2>
+<ul><li><strong>Khu vực EEA, Anh, Thuỵ Sĩ:</strong> trước khi có quảng cáo cá nhân hoá, trò chơi hiện biểu mẫu xin đồng ý của Google. Bạn có thể đồng ý, từ chối, hoặc chọn theo từng mục đích, từng đối tác. Nếu từ chối, bạn vẫn có thể thấy quảng cáo không cá nhân hoá.</li><li><strong>Các bang Hoa Kỳ có luật quyền riêng tư (vd. California):</strong> bạn có thể từ chối việc &quot;bán&quot; hoặc &quot;chia sẻ&quot; dữ liệu cho quảng cáo nhắm mục tiêu.</li><li><strong>Đổi lựa chọn bất cứ lúc nào:</strong> trong trò chơi mở <strong>Quyền riêng tư → Tuỳ chọn quyền riêng tư (quảng cáo)</strong>.</li><li><strong>Mã quảng cáo:</strong> bạn có thể đặt lại hoặc xoá trong cài đặt điện thoại (Android: <em>Cài đặt → Google → Quảng cáo</em>; iPhone: <em>Cài đặt → Quyền riêng tư &amp; Bảo mật → Theo dõi</em>).</li><li><strong>iPhone / iPad:</strong> trò chơi hỏi phép trước khi theo dõi (App Tracking Transparency). Nếu bạn chọn &quot;Yêu cầu ứng dụng không theo dõi&quot;, IDFA sẽ không được dùng.</li></ul>
+<h2>5. Cơ sở pháp lý (EEA/Anh)</h2>
+<p>Quảng cáo cá nhân hoá và việc dùng dữ liệu thiết bị liên quan dựa trên <strong>sự đồng ý</strong> của bạn. Quảng cáo không cá nhân hoá, giới hạn tần suất, chống gian lận và đo lường quảng cáo dựa trên <strong>lợi ích hợp pháp</strong> là duy trì một trò chơi miễn phí, như nêu trong biểu mẫu xin đồng ý của Google.</p>
+<h2>6. Chia sẻ và chuyển dữ liệu ra nước ngoài</h2>
+<p>Chúng tôi không tự bán hay chia sẻ dữ liệu, vì chúng tôi không nhận dữ liệu nào. Dữ liệu ở mục 3 do Google và các đối tác quảng cáo thu thập trực tiếp, có thể được xử lý ở nước khác (kể cả Hoa Kỳ) theo biện pháp bảo vệ của họ.</p>
+<h2>7. Thời gian lưu và bảo mật</h2>
+<p>Chúng tôi không lưu dữ liệu cá nhân. Google và đối tác lưu dữ liệu quảng cáo theo thời hạn trong chính sách của họ. Dữ liệu gửi tới dịch vụ quảng cáo được mã hoá khi truyền (HTTPS).</p>
+<h2>8. Quyền của bạn</h2>
+<p>Tuỳ nơi bạn sống (vd. GDPR ở châu Âu, CCPA ở California, Nghị định 13/2023/NĐ-CP ở Việt Nam), bạn có thể có quyền truy cập, chỉnh sửa, xoá, phản đối việc xử lý dữ liệu cá nhân và rút lại sự đồng ý. Vì chúng tôi không giữ dữ liệu cá nhân, cách nhanh nhất là dùng các lựa chọn ở mục 4 và công cụ của Google tại <strong><a href="https://myadcenter.google.com">https://myadcenter.google.com</a></strong>. Bạn cũng có thể gửi email, chúng tôi sẽ hỗ trợ. Bạn có quyền khiếu nại tới cơ quan bảo vệ dữ liệu nơi bạn sống.</p>
+<h2>9. Trẻ em</h2>
+<p>Trò chơi không dành cho trẻ em dưới 13 tuổi và chúng tôi không cố ý thu thập dữ liệu cá nhân của trẻ. Nếu bạn cho rằng một em nhỏ đã chơi và bị thu thập dữ liệu, hãy liên hệ để chúng tôi đề nghị Google xử lý.</p>
+<h2>10. Thay đổi chính sách</h2>
+<p>Khi chính sách thay đổi, chúng tôi cập nhật trang này và ngày ở đầu trang. Bản hiện hành cũng có trong trò chơi.</p>
+<h2>11. Liên hệ</h2>
+<p>DKTStudio · <strong><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></strong></p></div></div></div>
 <footer><div class="wrap">
 <div class="fgrid">
 <div><a class="brand" href="../" style="color:var(--fg)"><span class="mark">DK</span>DKTStudio</a>
-<p>Independent game studio from Vietnam, making fair, offline-friendly puzzle games.</p></div>
-<div><h5>Studio</h5><a href="../#games">Games</a><a href="../#approach">Approach</a><a href="../#about">About</a></div>
-<div><h5>Ninja Cats</h5><a href="../ninja-cats/">Game page</a><a href="../ninja-cats/privacy.html">Privacy Policy</a><a href="../ninja-cats/terms.html">Terms of Use</a></div>
-<div><h5>Contact</h5><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></div>
+<p><span data-l="en">Independent game studio from Vietnam, making fair, offline-friendly puzzle games.</span><span data-l="vi">Studio game độc lập tại Việt Nam, làm game giải đố công bằng, chơi được offline.</span></p></div>
+<div><h5>Studio</h5><a href="../#games"><span data-l="en">Games</span><span data-l="vi">Trò chơi</span></a><a href="../#approach"><span data-l="en">Approach</span><span data-l="vi">Cách làm</span></a><a href="../#about"><span data-l="en">About</span><span data-l="vi">Giới thiệu</span></a></div>
+<div><h5>Ninja Cats</h5><a href="../ninja-cats/"><span data-l="en">Game page</span><span data-l="vi">Trang game</span></a><a href="../ninja-cats/privacy.html"><span data-l="en">Privacy Policy</span><span data-l="vi">Quyền riêng tư</span></a><a href="../ninja-cats/terms.html"><span data-l="en">Terms of Use</span><span data-l="vi">Điều khoản sử dụng</span></a></div>
+<div><h5><span data-l="en">Contact</span><span data-l="vi">Liên hệ</span></h5><a href="mailto:dktviet0206@gmail.com">dktviet0206@gmail.com</a></div>
 </div>
-<div class="legalline"><span>© 2026 DKTStudio. All rights reserved.</span><span>Made in Vietnam 🇻🇳</span></div>
+<div class="legalline"><span>© 2026 DKTStudio. <span data-l="en">All rights reserved.</span><span data-l="vi">Bảo lưu mọi quyền.</span></span></div>
 </div></footer>
 </body></html>
