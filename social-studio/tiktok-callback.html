@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer"><meta name="robots" content="noindex">
+<title>Social Studio — TikTok</title>
+<style>body{margin:0;font:16px/1.6 system-ui,-apple-system,sans-serif;background:#fbfaf8;color:#14130f}
+@media (prefers-color-scheme:dark){body{background:#0f0e12;color:#efece6}}
+main{max-width:640px;margin:0 auto;padding:48px 20px}code{word-break:break-all;display:block;padding:12px;border:1px solid #e6e2db;border-radius:8px;margin:12px 0}
+button{font:inherit;padding:8px 16px;border-radius:999px;border:0;background:#e5484d;color:#fff;cursor:pointer}</style></head>
+<body><main>
+<h1>Đang chuyển về Social Studio…</h1>
+<p id="msg">Nếu trang không tự chuyển, hãy bật Social Studio trên máy rồi tải lại trang này, hoặc chép đường dẫn bên dưới và dán vào ô "Dán URL" ở trang Phát hành.</p>
+<code id="u"></code><button id="c" type="button">Chép đường dẫn</button>
+</main>
+<script>
+// Trang trung chuyển: TikTok chỉ nhận redirect https. Mã chỉ dùng một lần và cần khoá PKCE nằm trên máy chủ local,
+// trang này không lưu hay gửi mã đi đâu ngoài chuyển tiếp thẳng về 127.0.0.1.
+(function () {
+  var target = "http://127.0.0.1:4800/api/oauth/tiktok/callback" + location.search;
+  document.getElementById("u").textContent = target;
+  document.getElementById("c").onclick = function () { navigator.clipboard && navigator.clipboard.writeText(target); };
+  if (location.search.indexOf("code=") !== -1 || location.search.indexOf("error=") !== -1) location.replace(target);
+})();
+</script></body></html>
